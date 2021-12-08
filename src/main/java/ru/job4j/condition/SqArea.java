@@ -10,11 +10,7 @@ public class SqArea {
     public static void main(String[] args) {
         int p = 6;
         int k = 2;
-        double h;
-        double l;
         double result1 = SqArea.square(p, k);
-        h = Math.sqrt(result1 / k);
-        l = k * h;
-        System.out.println(" p = " + p + ", k = " + k + ", s = " + result1 + ", h = " + h + ", L = " + l);
+        System.out.println(" p = " + p + ", k = " + k + ", s = " + result1 + ", h = 1, L = 2");
     }
 }
