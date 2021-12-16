@@ -7,8 +7,7 @@ public class ChessBoard {
         boolean isDiag = Math.abs(x1 - x2) == Math.abs(y1 - y2);
         if (isPositive && lessEight && isDiag) {
             return Math.abs(x1 - x2);
-        } else {
-            return 0;
         }
+        return 0;
     }
 }
