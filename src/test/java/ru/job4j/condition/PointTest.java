@@ -58,4 +58,18 @@ public class PointTest {
         Assert.assertEquals(expected, out, 0.01);
     }
 
+    @Test
+    public void when000To345Then7Point071() {
+        int x1 = 0;
+        int y1 = 0;
+        int z1 = 0;
+        int x2 = 3;
+        int y2 = 4;
+        int z2 = 5;
+        double expected = 7.071;
+        Point point1 = new Point(x1, y1, z1);
+        Point point2 = new Point(x2, y2, z2);
+        double out = point1.distance3D(point2);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
